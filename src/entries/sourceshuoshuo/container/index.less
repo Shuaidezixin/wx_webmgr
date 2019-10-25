@@ -1,0 +1,101 @@
+.sourceshuoshuo-page {
+	height: 100%;
+	background: #f8f8f8;
+	box-sizing: border-box;
+	padding: 20px 0;
+	min-width: 1200px;
+	overflow: auto;
+	.sourceshuoshuo-container {
+		margin: 0 auto;
+		width: 1200px;
+		background: #fff;
+		height: 100%;
+		border-radius: 4px;
+		display: flex;
+		flex-flow: column;
+		align-items: stretch;
+		.shuoshuo-header {
+			box-sizing: border-box;
+			padding: 10px 10px;
+			display: flex;
+			// border-bottom: 1px solid rgb(228, 228, 228);
+			// box-shadow: 0 1px 2px rgb(230, 230, 230);
+			border-bottom: 1px solid #ccc;
+			.t1 {
+				flex: 1;
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+		.sourceshuoshuo-content {
+			flex: 1;
+			display: flex;
+		}
+		.title-text {
+			font-weight: 600;
+			font-size: 16px;
+			margin-bottom: 40px;
+			margin-top: 20px;
+		}
+	}
+	.inputbox-container .input-item .label-name {
+		width: 80px;
+	}
+	.shuoshuo-left {
+		height: 100%;
+		overflow: auto;
+		width: 500px;
+		border-right: 1px solid #ccc;
+		box-sizing: border-box;
+		padding: 10px;
+		.item-inner {
+			display: flex;
+			align-items: center;
+			width: 100%;
+		}
+		.input {
+			flex: 1;
+			margin-right: 10px;
+			&:nth-last-child(1) {
+				margin-right: 0;
+			}
+		}
+		.tag {
+			margin-right: 5px;
+			// margin-bottom: 3px;
+			height: 24px;
+			margin-top: 2px;
+			position: relative;
+		}
+	}
+	.shuoshuo-right {
+		height: 100%;
+		overflow: auto;
+		flex: 1;
+		box-sizing: border-box;
+		padding: 10px;
+		.btn {
+			margin-top: 10px;
+		}
+		.t {
+			margin-right: 5px;
+		}
+	}
+	.textarea-box {
+		position: relative;
+		.textarea {
+			width: 100%;
+			margin-bottom: 10px;
+			min-height: 50px;
+		}
+		.delete {
+			position: absolute;
+			right: -18px;
+			top: 3px;
+			cursor: pointer;
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}

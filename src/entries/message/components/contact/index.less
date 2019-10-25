@@ -1,0 +1,65 @@
+.contact-item {
+	box-sizing: border-box;
+	padding: 10px;
+	background: #f8f8f8;
+	transition: all 0.3s linear;
+	position: relative;
+	cursor: pointer;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		bottom: 0;
+		height: 1px;
+		background: #dbdbdb;
+	}
+	&:hover {
+		background: #dbdbdb;
+	}
+	&.act {
+		background: #dbdbdb;
+	}
+	.contact-inner {
+		display: flex;
+		align-items: stretch;
+		flex-wrap: nowrap;
+		flex-shrink: 0;
+		.contact-header {
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
+		}
+		.contact-middle {
+			flex: 1;
+			min-width: 40px;
+			.name {
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.last-message {
+				margin-top: 3px;
+				font-size: 12px;
+				color: #a4a4a4;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+		.circle {
+			min-width: 18px;
+			padding: 2px;
+			border-radius: 50%;
+			background: red;
+			display: block;
+			color: #fff;
+			font-size: 10px;
+			line-height: 16px;
+			text-align: center;
+			&.group {
+				background: #34df00;
+			}
+		}
+	}
+}

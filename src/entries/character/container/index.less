@@ -1,0 +1,70 @@
+.character-page {
+	box-sizing: border-box;
+	padding: 0 15px 0 15px;
+	position: relative;
+	height: 100%;
+	background: #f8f8f8;
+	.list-page-box {
+		.list-header {
+			button {
+				margin-right: 20px;
+			}
+		}
+		// .list-center {
+		// }
+	}
+}
+.character-detail-modal {
+	.ant-modal-body {
+		padding: 10px 20px;
+		height: 600px;
+		.detail-header {
+			display: flex;
+			flex-wrap: wrap;
+			height: 12%;
+			.item {
+				width: 190px;
+				display: flex;
+				label {
+					padding-left: 5px;
+					display: inline-block;
+					width: 70px;
+				}
+				& > div {
+					width: 110px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+			.tags {
+				width: 270px;
+				.tag-item {
+					width: 200px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					.detail-tag {
+						margin-right: 3px;
+						margin-bottom: 3px;
+					}
+				}
+			}
+		}
+		.account-list {
+			height: 88%;
+			.list-page-box {
+				padding-top: 0;
+			}
+			.table-box .table-body {
+				top: 30px;
+			}
+			.table-box .table td {
+				padding: 5px 0;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+}

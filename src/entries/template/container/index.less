@@ -1,0 +1,158 @@
+.template-page {
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: stretch;
+	justify-content: center;
+	align-items: stretch;
+	background: #f8f8f8;
+	box-sizing: border-box;
+	// padding: 20px;
+	.template-container {
+		flex: 1;
+		overflow: auto;
+		width: 100%;
+		background: #fff;
+
+		&:after {
+			clear: both;
+		}
+		.template-left {
+			width: 100px;
+			float: left;
+			background: #ccc;
+			height: 100%;
+			box-sizing: border-box;
+			overflow: auto;
+			.tem-nav {
+				padding: 5px 10px;
+				cursor: pointer;
+				&:hover {
+					background: #1890ff;
+					color: #fff;
+				}
+			}
+		}
+		.template-right {
+			margin-left: 100px;
+			height: 100%;
+			overflow: auto;
+		}
+	}
+	.group {
+		.group-title {
+			background: #ccc;
+			padding: 10px;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			.name {
+				flex: 1;
+			}
+			.ctrl-icon {
+				margin-left: 5px;
+				font-size: 16px;
+				cursor: pointer;
+				&:hover {
+					color: #1890ff;
+				}
+			}
+		}
+		.group-item {
+			box-sizing: border-box;
+			padding: 5px 20px;
+			display: flex;
+			align-items: flex-start;
+			.type {
+				min-width: 100px;
+				text-align: right;
+			}
+			.time {
+				color: red;
+				margin-right: 20px;
+			}
+			.cont {
+				display: flex;
+			}
+			.delete {
+				margin-left: 20px;
+				color: #1890ff;
+				cursor: pointer;
+				font-size: 12px;
+				&:hover {
+					color: red;
+				}
+			}
+			.imgbox {
+				margin-top: 10px;
+				.img {
+					width: 50px;
+					height: 50px;
+					margin-right: 10px;
+					margin-bottom: 10px;
+				}
+			}
+			.video {
+				display: inline-block;
+				letter-spacing: -4px;
+				font-size: 0;
+				position: relative;
+				margin-bottom: 10px;
+				.img {
+					width: 50px;
+					height: 50px;
+				}
+				.cover {
+					position: absolute;
+					left: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: rgba(0, 0, 0, 0.4);
+					img {
+						width: 80%;
+						height: 80%;
+					}
+				}
+			}
+			.link {
+				background: rgba(0, 0, 0, 0.2);
+				display: flex;
+				align-items: center;
+				width: 300px;
+				margin-bottom: 10px;
+				.coverimg {
+					width: 40px;
+					height: 40px;
+				}
+				.link-title {
+					flex: 1;
+					min-width: 0;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					box-sizing: border-box;
+					padding: 0 10px;
+				}
+			}
+			.mark {
+				img {
+					width: 100px;
+				}
+			}
+			.img {
+				width: 60px;
+				height: 60px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+			.a {
+				color: #1890ff;
+				padding-left: 75px;
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.message-phone-box {
+	height: calc(50% - 8px);
+	width: 300px;
+	box-sizing: border-box;
+	border-left: 4px solid #aaa;
+	border-right: 4px solid #aaa;
+	border-bottom: 4px solid #aaa;
+	border-top: 30px solid #aaa;
+	transition: all 0.3s linear;
+	border-radius: 4px;
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	align-items: stretch;
+	margin-left: 10px;
+	margin-top: 5px;
+	//&:hover,
+	&.act {
+		border-left: 4px solid #000;
+		border-right: 4px solid #000;
+		border-bottom: 4px solid #000;
+		border-top: 30px solid #000;
+	}
+	.phone-title {
+		position: absolute;
+		left: 0;
+		top: -30px;
+		height: 30px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 0 10px;
+		box-sizing: border-box;
+		.text {
+			flex: 1;
+			color: #fff;
+			min-width: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.phone-icon {
+			font-size: 14px;
+			cursor: pointer;
+			margin-left: 5px;
+			color: #fff;
+		}
+	}
+	.phone-message {
+		flex: 1;
+		background: #f2f2f2;
+	}
+	.phone-ctrl {
+		min-height: 40px;
+		background: #f8f8f8;
+		display: flex;
+		align-items: center;
+	}
+	.chat-item .msg-box {
+		max-width: 180px;
+		font-size: 10px;
+		line-height: 14px;
+	}
+}

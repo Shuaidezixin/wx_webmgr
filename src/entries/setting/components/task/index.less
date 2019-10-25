@@ -1,0 +1,86 @@
+.setting-task {
+	height: 100%;
+	overflow: auto;
+	.setting-task-container {
+		margin: 20px;
+		background: #f8f8f8;
+		box-sizing: border-box;
+		border-radius: 3px;
+	}
+	.item-title {
+		font-size: 16px;
+		font-weight: 600;
+		padding: 20px 20px 10px 20px;
+	}
+	.item-content {
+		padding: 0 30px;
+		box-sizing: border-box;
+	}
+	.task-item {
+		display: flex;
+		align-items: stretch;
+		&.header {
+			background: #ccc;
+			.classify {
+				padding: 10px 0;
+			}
+		}
+		&.body {
+			.classify {
+				border-left: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+			}
+			.name {
+				border-bottom: 1px solid #ccc;
+				//border-right: 1px solid #ccc;
+			}
+			.auto {
+				border-bottom: 1px solid #ccc;
+				//border-right: 1px solid #ccc;
+			}
+			.self,
+			.tasklimit {
+				border-bottom: 1px solid #ccc;
+			}
+		}
+		.classify {
+			width: 200px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.task-content {
+			flex: 1;
+			border-right: 1px solid #ccc;
+		}
+		.child {
+			display: flex;
+			.name {
+				width: 400px;
+				padding: 10px 10px;
+				display: flex;
+				align-items: center;
+			}
+			.auto {
+				width: 150px;
+				padding: 10px 10px;
+				display: flex;
+				align-items: center;
+			}
+			.self {
+				width: 150px;
+				padding: 10px 10px;
+				display: flex;
+				align-items: center;
+			}
+			.tasklimit {
+				flex: 1;
+				padding: 10px 10px;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

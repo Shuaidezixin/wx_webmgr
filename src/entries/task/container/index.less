@@ -1,0 +1,74 @@
+.taskmanager-page {
+	height: 100%;
+	background: #f8f8f8;
+	&:after {
+		clear: both;
+	}
+	.task-left {
+		width: 500px;
+		height: 100%;
+		margin-right: 10px;
+		margin-left: 10px;
+		background: #fff;
+		display: flex;
+		flex-flow: column;
+		align-items: stretch;
+		float: left;
+		.user-list {
+			flex: 1;
+			overflow: auto;
+		}
+	}
+	.task-right {
+		height: 100%;
+		background: #fff;
+		display: block;
+		margin-left: 520px;
+		position: relative;
+		.container {
+			height: 100%;
+			display: none;
+			&.show {
+				display: block;
+			}
+		}
+	}
+	.ctrl-div {
+		display: flex;
+		padding: 10px 0;
+		.select-div {
+			flex: 1;
+		}
+		.select {
+			width: 90%;
+		}
+		.ctrl-item {
+			margin: 0 5px;
+			font-size: 12px;
+		}
+	}
+	.userlist-delete {
+		cursor: pointer;
+		color: red;
+	}
+	.create-new-short {
+		box-sizing: border-box;
+		color: #1890ff;
+		cursor: pointer;
+		padding: 5px 10px;
+	}
+}
+body {
+	overflow: hidden;
+}
+.popover-box {
+	width: 100px;
+	.popover-item {
+		padding: 5px;
+		box-sizing: border-box;
+		cursor: pointer;
+		&:hover {
+			background: #f8f8f8;
+		}
+	}
+}

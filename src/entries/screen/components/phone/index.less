@@ -1,0 +1,74 @@
+.phone-components {
+	display: flex;
+	width: 300px;
+	flex-flow: column;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	&.act .phone-top {
+		background: #000;
+	}
+	// .phone {
+	// 	height: 480px;
+	// }
+	.phone-top {
+		display: flex;
+		align-items: center;
+		background: #ccc;
+		box-sizing: border-box;
+		padding: 5px;
+	}
+	.phone-footer {
+		display: flex;
+		.footer-item {
+			padding: 5px;
+			flex: 1;
+			text-align: center;
+			cursor: pointer;
+			background: #fff;
+			transition: all 0.3s linear;
+			&:hover {
+				background: #ccc;
+			}
+		}
+	}
+	.phone-status {
+		font-size: 24px;
+		&.warn {
+			color: red;
+		}
+		&.unlogin {
+			color: orange;
+		}
+		&.success {
+			color: rgb(0, 196, 0);
+		}
+	}
+	.phone-name {
+		flex: 1;
+		margin: 0 15px 0 10px;
+		color: #fff;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&.init-step {
+			color: rgb(0, 196, 0);
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+	.state {
+		margin: 0 5px;
+		color: #a4a4a4;
+		font-size: 12px;
+	}
+	.full {
+		font-size: 24px;
+		cursor: pointer;
+		color: #fff;
+	}
+	.init-btn {
+		font-size: 12px;
+	}
+}

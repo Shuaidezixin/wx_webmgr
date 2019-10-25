@@ -1,0 +1,139 @@
+.manager-component {
+	height: 100%;
+	background: #f8f8f8;
+	.manager-header {
+		height: 50px;
+		box-sizing: border-box;
+		padding: 4px 10px;
+		display: flex;
+		align-items: center;
+		.input {
+			width: 225px;
+			margin-right: 10px;
+			height: 32px;
+		}
+	}
+	.manager-content {
+		height: calc(100% - 50px);
+		display: flex;
+		align-items: stretch;
+		.department {
+			margin: 0 10px;
+			flex: 0 0 300px;
+			background: #fff;
+			display: flex;
+			align-items: stretch;
+			flex-flow: column;
+		}
+		.title-box {
+			height: 40px;
+			background: #ccc;
+			display: flex;
+			align-items: center;
+			padding: 0 10px;
+		}
+		.title-text {
+			flex: 1;
+		}
+		.icon {
+			color: #1890ff;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		.message-container {
+			flex: 1;
+			position: relative;
+		}
+		.customer {
+			margin: 0 10px 0 0;
+			flex: 1 0 300px;
+			background: #fff;
+			display: flex;
+			align-items: stretch;
+			flex-flow: column;
+			text-align: center;
+			.name {
+				width: 150px;
+			}
+			.phone {
+				width: 100px;
+			}
+			.role {
+				flex: 1;
+			}
+			.status {
+				width: 60px;
+			}
+			.ctrl {
+				width: 80px;
+			}
+		}
+		.manager-ctrl {
+			margin: 0 10px 0 0;
+			flex: 1 0 400px;
+			background: #fff;
+		}
+		.department-item {
+			cursor: pointer;
+			&:hover,
+			&.act {
+				color: #1890ff;
+				background: rgb(235, 234, 234);
+			}
+		}
+		.item {
+			box-sizing: border-box;
+			padding: 13px 10px;
+			display: flex;
+			overflow: hidden;
+			.name {
+				flex: 1;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.edit {
+				margin-right: 10px;
+				cursor: pointer;
+				color: #52c41a;
+			}
+			.ctrl {
+				width: 40px;
+				text-align: center;
+				.delete {
+					color: red;
+					cursor: pointer;
+				}
+			}
+		}
+		.customer-item {
+			padding: 10px 10px;
+			cursor: pointer;
+			display: flex;
+			.edit {
+				margin-right: 10px;
+				cursor: pointer;
+				color: #52c41a;
+			}
+			.delete {
+				color: red;
+				cursor: pointer;
+			}
+			&:hover,
+			&.act {
+				color: #1890ff;
+				background: rgb(235, 234, 234);
+			}
+		}
+	}
+}
+.department-modal {
+	.ant-modal-body {
+		padding: 20px 30px 20px 0;
+	}
+}
+.customer-modal {
+	.ant-modal-body {
+		padding: 20px 30px 20px 0;
+	}
+}

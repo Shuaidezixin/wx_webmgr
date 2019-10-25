@@ -1,0 +1,47 @@
+.tags-box {
+	vertical-align: middle;
+	margin-top: 3px;
+}
+.tags-ctrl-box {
+	width: 500px;
+	.tags-ctrl-header {
+		box-sizing: border-box;
+		padding: 5px 0;
+		display: flex;
+		.tags-ctrl-btn {
+			margin-left: 5px;
+		}
+	}
+	.tags-list-box {
+		height: 200px;
+		overflow: auto;
+		padding-top: 10px;
+		.tagbtn {
+			margin-right: 3px;
+			margin-bottom: 5px;
+			position: relative;
+			display: inline-block;
+			&:hover {
+				.closebtn {
+					display: block;
+				}
+			}
+			.tag-dom {
+				cursor: pointer;
+			}
+			.closebtn {
+				cursor: pointer;
+				width: 12px;
+				height: 12px;
+				font-size: 10px;
+				border-radius: 50%;
+				background: red;
+				color: #fff;
+				right: 0;
+				top: -4px;
+				position: absolute;
+				display: none;
+			}
+		}
+	}
+}

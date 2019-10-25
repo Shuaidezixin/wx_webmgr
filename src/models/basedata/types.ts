@@ -1,0 +1,13 @@
+const Prefix_Word = "BASEDATA_";
+export const GETPROVINCES = `${Prefix_Word}GET_PROVINCES`;
+export const GETCITY = `${Prefix_Word}GET_CITY`;
+export const LOGIN = `${Prefix_Word}LOGIN`;
+export const GETTAGLIST = `${Prefix_Word}GET_TAG_LIST`;
+export const GETTAGLIST1 = `${Prefix_Word}GET_TAG_LIST1`;
+export const UPLOADIMG = `${Prefix_Word}UPLOAD_IMG`;
+export const ADDTAG = `${Prefix_Word}ADD_TAG`;
+export const DELETETAG = `${Prefix_Word}DELETE_TAG`;
+export const CLEARTAG = `${Prefix_Word}CLEAR_TAG`;
+export const GETHOMESTATISTICS = `${Prefix_Word}GET_HOME_STATISTICS`;
+export const GETUSERINFO = `${Prefix_Word}GET_USERINFO`;
+export const UPDATEUSERINFO = `${Prefix_Word}UPDATE_USERINFO`;

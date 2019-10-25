@@ -1,0 +1,45 @@
+.task-list-page {
+	height: 100%;
+	.task-header {
+		display: flex;
+		align-items: center;
+		padding: 6px 10px;
+		border-bottom: 1px solid #ccc;
+		.input {
+			width: 200px;
+		}
+		.btn {
+			margin-left: 10px;
+			height: 30px;
+		}
+	}
+	.task-list-container {
+		height: calc(100% - 45px);
+		overflow: auto;
+		box-sizing: border-box;
+		padding-top: 10px;
+	}
+	.task-item {
+		box-sizing: border-box;
+		padding: 0 10px 0 10px;
+		.item-title {
+			font-size: 15px;
+			padding: 0 0 10px 0px;
+		}
+		.item-btn {
+			margin-right: 10px;
+			margin-bottom: 10px;
+			width: 200px;
+			text-align: center;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+	.item-content {
+		padding-left: 10px;
+	}
+}
+.task-draw {
+	background: rgba(0, 0, 0, 0.6);
+}

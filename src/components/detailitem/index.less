@@ -1,0 +1,26 @@
+.detail-item {
+	display: inline-block;
+	min-width: 300px;
+	padding: 8px 10px;
+	max-width: 100%;
+	.detail-item-name {
+		display: inline-block;
+		min-width: 50px;
+		margin-right: 20px;
+		text-align: left;
+		color: #a4a4a4;
+		vertical-align: middle;
+	}
+	.detail-item-text {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&.top {
+		.detail-item-name {
+			vertical-align: top;
+		}
+		.detail-item-text {
+			vertical-align: top;
+		}
+	}
+}

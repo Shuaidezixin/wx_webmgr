@@ -1,0 +1,9 @@
+const Prefix_Word = "SETTING_";
+export const GETTASK = `${Prefix_Word}GET_TASK`;
+export const UPDATETASK = `${Prefix_Word}UPDATE_TASK`;
+export const GETSOURCE = `${Prefix_Word}GET_SOURCE`;
+export const UPDATESOURCE = `${Prefix_Word}UPDATE_SOURCE`;
+export const GETADDFRIEND = `${Prefix_Word}GET_ADDFRIEND`;
+export const UPDATEADDFRIEND = `${Prefix_Word}UPDATE_ADDFRIEND`;
+export const GETINIT = `${Prefix_Word}GET_INIT`;
+export const UPDATEINIT = `${Prefix_Word}UPDATE_INIT`;

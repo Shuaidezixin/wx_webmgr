@@ -1,0 +1,107 @@
+.taskitem {
+	display: flex;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	&:nth-last-child(1) {
+		border-bottom: none;
+	}
+	.task-content {
+		flex: 1;
+		margin: 0 20px 0 0;
+	}
+	.task-name {
+		box-sizing: border-box;
+		padding: 0 10px;
+		color: #cc9c00;
+	}
+	.task-time {
+		color: #a4a4a4;
+	}
+	.type {
+		width: 100px;
+		text-align: right;
+	}
+	.friend-detail {
+		margin-top: 0;
+	}
+	.sortnum {
+		min-width: 16px;
+	}
+	.contentbox {
+		.imgbox {
+			.img {
+				width: 50px;
+				height: 50px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+		}
+		.video {
+			display: inline-block;
+			letter-spacing: -4px;
+			font-size: 0;
+			position: relative;
+			margin-bottom: 10px;
+			.img {
+				width: 50px;
+				height: 50px;
+			}
+			.cover {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgba(0, 0, 0, 0.4);
+				img {
+					width: 80%;
+					height: 80%;
+				}
+			}
+		}
+		.link {
+			background: rgba(0, 0, 0, 0.2);
+			display: flex;
+			align-items: center;
+			width: 300px;
+			margin-bottom: 10px;
+			.coverimg {
+				width: 40px;
+				height: 40px;
+			}
+			.link-title {
+				flex: 1;
+				min-width: 0;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				box-sizing: border-box;
+				padding: 0 10px;
+			}
+		}
+		.mark {
+			img {
+				width: 100px;
+			}
+		}
+		.txt {
+			margin-bottom: 10px;
+		}
+		.text {
+			margin-bottom: 10px;
+			&:nth-last-child(1) {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.delete {
+		color: red;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+}

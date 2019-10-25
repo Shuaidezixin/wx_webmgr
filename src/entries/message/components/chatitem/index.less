@@ -1,0 +1,105 @@
+.chat-item {
+	padding: 10px 15px;
+	.img {
+		width: 30px;
+		height: 30px;
+		border-radius: 3px;
+	}
+	.msg-item {
+		display: flex;
+		align-items: flex-start;
+		.img {
+			margin-right: 15px;
+		}
+	}
+	.nickname {
+		position: relative;
+		top: -11px;
+		font-size: 10px;
+		height: 10px;
+		color: #a4a4a4;
+	}
+	.msg-box {
+		max-width: 250px;
+		border-radius: 4px;
+		background: #fff;
+		box-sizing: border-box;
+		padding: 5px 10px;
+		position: relative;
+		font-size: 12px;
+		box-shadow: 2px 2px 2px #c4c3c3;
+		word-break: break-all;
+		word-wrap: break-word;
+		min-height: 28px;
+		overflow-x: hidden;
+		&.img-show {
+			padding: 0;
+			.showimg {
+				width: 100%;
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.msg-item {
+		.msg-box:after {
+			content: "";
+			position: absolute;
+			left: -15px;
+			top: 5px;
+			width: 0;
+			height: 0;
+			border-left: 10px transparent solid;
+			border-top: 10px transparent solid;
+			border-bottom: 10px transparent solid;
+			border-right: 10px #fff solid;
+		}
+	}
+	.own-item {
+		display: flex;
+		align-items: flex-start;
+		.img {
+			margin-left: 15px;
+		}
+		.prefix-div {
+			flex: 1;
+		}
+		.withdraw {
+			padding-top: 5px;
+			font-size: 10px;
+			margin: 0 10px;
+			color: red;
+			font-size: 10px;
+			cursor: pointer;
+			display: none;
+		}
+		&:hover {
+			.withdraw {
+				display: block;
+			}
+		}
+		.msg-box {
+			background: #5ceb5c;
+			box-shadow: -2px 2px 2px #c4c3c3;
+			&:after {
+				content: "";
+				position: absolute;
+				right: -15px;
+				top: 5px;
+				width: 0;
+				height: 0;
+				border-right: 10px transparent solid;
+				border-top: 10px transparent solid;
+				border-bottom: 10px transparent solid;
+				border-left: 10px #5ceb5c solid;
+				word-break: break-all;
+				word-wrap: break-word;
+			}
+			.showimg {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

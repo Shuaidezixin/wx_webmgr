@@ -1,0 +1,61 @@
+.wechat-item {
+	box-sizing: border-box;
+	padding: 10px;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		bottom: 0;
+		height: 1px;
+		background: #706f6f;
+	}
+	&:hover,
+	&.act {
+		background-color: #706f6f;
+	}
+	.wechat-inner {
+		display: flex;
+		align-items: center;
+		.wechat-img {
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
+		}
+		.wechat-content {
+			height: 40px;
+			flex: 1;
+			min-width: 0;
+		}
+		.wechat-name {
+			font-size: 14px;
+			font-weight: 600;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+	.status {
+		display: flex;
+		margin-top: 3px;
+		.now-state {
+			flex: 1;
+			color: #a4a4a4;
+			font-size: 12px;
+			&.act {
+				color: rgb(0, 207, 0);
+			}
+		}
+	}
+	.state {
+		height: 20px;
+		line-height: 18px;
+		border-radius: 10px;
+		padding: 0 5px;
+		margin: 0 5px;
+		text-align: center;
+	}
+}

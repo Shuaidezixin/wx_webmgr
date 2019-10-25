@@ -1,0 +1,13 @@
+const Prefix_Word = "DataCensus_";
+export const ACCOUNTEXECUTELIST = `${Prefix_Word}ACCOUNT_EXECUTE_LIST`;
+export const ACCOUNTTASKINFO = `${Prefix_Word}ACCOUNT_TASK_INFO`;
+export const ACCOUNTSINGLECHECK = `${Prefix_Word}SINGLE_CHECK`;
+export const ACCOUNTALLCHECK = `${Prefix_Word}ALL_CHECK`;
+export const BATCHREMOVETASK = `${Prefix_Word}BATCH_REMOVE_TASK`;
+export const TASKEXECUTELIST = `${Prefix_Word}TASK_EXECUTE_LIST`;
+export const TASKSINGLECHECK = `${Prefix_Word}TASK_SINGLE_CHECK`;
+export const TASKALLCHECK = `${Prefix_Word}TASK_ALL_CHECK`;
+export const TASKEXECLISTINFO = `${Prefix_Word}TASK_EXEC_LIST_INFO`;
+export const TASKINFOSINGLECHECK = `${Prefix_Word}TASK_INFO_SINGLE_CHECK`;
+export const TASKINFOALLCHECK = `${Prefix_Word}TASK_INFO_ALL_CHECK`;
+export const REMOVETASKBYTYPE = `${Prefix_Word}REMOVE_TASK_BYTYPE`;

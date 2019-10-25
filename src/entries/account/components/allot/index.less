@@ -1,0 +1,50 @@
+.allot-modal {
+	.ant-modal-body {
+		padding: 0;
+	}
+	.allot-container {
+		height: 300px;
+		overflow: auto;
+	}
+	.allot-item {
+		box-sizing: border-box;
+		padding: 5px 0;
+		display: flex;
+		align-items: center;
+		&.header {
+			background: #ccc;
+		}
+		&:hover {
+			background: #f8f8f8;
+		}
+		.radio {
+			width: 100px;
+			text-align: center;
+		}
+		.name {
+			padding-left: 8px;
+			box-sizing: border-box;
+		}
+	}
+	.ant-radio-wrapper {
+		box-sizing: border-box;
+		padding: 5px 0;
+	}
+	.ant-radio-group,
+	.ant-radio-wrapper {
+		display: block;
+	}
+	.text {
+		display: inline-block;
+	}
+	.ant-radio {
+		width: 100px;
+		text-align: center;
+	}
+	.ant-radio-inner {
+		display: inline-block;
+	}
+	.ant-radio-checked::after {
+		border: none;
+	}
+}

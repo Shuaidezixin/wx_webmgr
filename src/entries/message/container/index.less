@@ -1,0 +1,168 @@
+.message-page {
+	height: 100%;
+	display: flex;
+	align-items: stretch;
+	.message-wechat {
+		flex: 0 0 300px;
+		box-sizing: border-box;
+		background: rgb(59, 59, 59);
+		display: flex;
+		flex-flow: column;
+		align-items: stretch;
+		color: #fff;
+	}
+	.message-container {
+		flex: 0 0 360px;
+		box-sizing: border-box;
+		// background: #dbdbdb;
+	}
+	.message-detail-box {
+		flex: 1;
+	}
+	.unread {
+		display: flex;
+		height: 82px;
+		align-items: stretch;
+		.unread-item {
+			flex: 1;
+			text-align: center;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-flow: column;
+			position: relative;
+			box-sizing: border-box;
+			padding-bottom: 25px;
+			.read {
+				background: rgba(0, 0, 0, 0.3);
+				font-size: 12px;
+				padding: 3px;
+				cursor: pointer;
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+			.num {
+				font-size: 24px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.message-filter {
+		display: flex;
+		padding: 5px;
+		box-sizing: border-box;
+		align-items: center;
+		.select {
+			flex: 1;
+			margin-right: 10px;
+		}
+		.input {
+			flex: 1;
+			// width: 150px;
+		}
+		.sync-device {
+			font-size: 24px;
+			cursor: pointer;
+		}
+	}
+	.wechat-list-box {
+		flex: 1;
+		position: relative;
+	}
+	.type {
+		&:nth-child(1) {
+			background: red;
+		}
+		&:nth-child(2) {
+			background: rgb(52, 223, 0);
+		}
+		&:nth-child(3) {
+			background: rgb(0, 204, 255);
+		}
+	}
+	.ant-tabs {
+		height: 100%;
+		.ant-tabs-content {
+			height: 100%;
+		}
+		// .ant-tabs-tabpane {
+		// 	height: calc(100% - 83px);
+		// }
+		.tab-header {
+			display: flex;
+			border-bottom: 1px solid #ccc;
+			background: #f8f8f8;
+		}
+		.tab-item {
+			flex: 1;
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+			cursor: pointer;
+			&.act {
+				color: #fff;
+				background: #1890ff;
+			}
+			&:hover {
+				color: #fff;
+				background: #1890ff;
+			}
+		}
+	}
+	.search {
+		box-sizing: border-box;
+		padding: 5px 10px;
+		background: #f8f8f8;
+		display: flex;
+		align-items: center;
+		.add {
+			margin-right: 10px;
+			cursor: pointer;
+			font-size: 28px;
+		}
+		.newmessage {
+			flex: 1;
+			text-align: right;
+			padding: 6px 0;
+			min-height: 32px;
+			box-sizing: border-box;
+			cursor: pointer;
+		}
+		.number {
+			color: red;
+			margin: 0 3px;
+		}
+	}
+	.chat-phone {
+		width: 100%;
+		height: 100%;
+		border-left: 1px solid #ccc;
+		overflow: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.has-proving {
+		background: #f8f8f8;
+		padding: 0 10px 5px 10px;
+		cursor: pointer;
+		text-align: right;
+	}
+}
+body {
+	overflow: hidden;
+}
+.inner-person {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 1px solid rgb(1, 226, 1);
+	color: rgb(1, 226, 1);
+	font-size: 10px !important;
+	display: inline-block;
+	text-align: center;
+	line-height: 16px;
+}

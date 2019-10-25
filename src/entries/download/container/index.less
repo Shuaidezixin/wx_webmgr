@@ -1,0 +1,53 @@
+.download-page {
+	height: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.download-container {
+		width: 600px;
+		.title {
+			font-size: 14px;
+			font-weight: 600;
+			padding: 20px 0;
+		}
+		.intro {
+			color: #1890ff;
+			padding: 15px;
+			cursor: pointer;
+		}
+		.app-item {
+			display: flex;
+			align-items: center;
+			box-sizing: border-box;
+			padding: 10px 15px;
+			cursor: pointer;
+			margin-left: 15px;
+			border-left: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+			border-top: 1px solid #ccc;
+			&:nth-last-child(1) {
+				border-bottom: 1px solid #ccc;
+			}
+			&:hover {
+				background: #f8f8f8;
+			}
+		}
+		.app-icon {
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+		}
+		.app-name {
+			margin-right: 10px;
+		}
+		.app-version {
+			flex: 1;
+		}
+		.app-filename {
+			margin-left: 10px;
+			color: #1890ff;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.task-addfriend {
+	overflow: auto;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 10px;
+	.group {
+		box-sizing: border-box;
+		padding: 10px;
+		border-bottom: 1px solid rgb(231, 230, 230);
+		&:nth-last-child(1) {
+			border-bottom: none;
+		}
+		.group-title {
+			display: flex;
+			.text {
+				flex: 1;
+				color: #1890ff;
+				font-size: 13px;
+			}
+			.btn {
+				font-size: 13px;
+			}
+		}
+	}
+	.phone-item {
+		box-sizing: border-box;
+		display: flex;
+		padding: 5px;
+		border-bottom: 1px solid rgb(231, 230, 230);
+		align-items: center;
+		.txt {
+			flex: 1;
+		}
+		.phone-delete {
+			color: red;
+			font-size: 16px;
+		}
+	}
+	.inputbox-container .input-item .label-name {
+		width: 160px;
+	}
+	.inner-item {
+		margin-top: 10px;
+	}
+	.inputbox-container .input-item .text {
+		font-size: 12px;
+	}
+	.random-item {
+		display: flex;
+		align-items: center;
+		.ant-input {
+			margin: 0 10px;
+			flex: 1;
+			width: auto;
+		}
+	}
+	// .random-text {
+	// 	width: 20px;
+	// }
+}

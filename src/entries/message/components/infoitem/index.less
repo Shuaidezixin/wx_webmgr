@@ -1,0 +1,30 @@
+.info-item {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	font-size: 12px;
+	min-height: 41px;
+	.info-name {
+		width: 80px;
+		text-align: right;
+		margin-right: 10px;
+		color: #a4a4a4;
+	}
+	.info-content {
+		flex: 1;
+		.content-edit {
+			padding: 3px 5px;
+			outline: none;
+			box-sizing: border-box;
+			box-shadow: none;
+			border: none;
+			border-bottom: 1px solid green;
+			width: 100%;
+		}
+		.content-read {
+			padding: 3px 5px;
+			border-bottom: 1px solid transparent;
+		}
+	}
+}

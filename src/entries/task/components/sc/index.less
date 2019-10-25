@@ -1,0 +1,25 @@
+.chatcreate-task {
+	height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 0 10px;
+	.group {
+		box-sizing: border-box;
+		padding: 10px;
+		border-bottom: 1px solid rgb(231, 230, 230);
+		&:nth-last-child(1) {
+			border-bottom: none;
+		}
+		.group-title {
+			display: flex;
+			.text {
+				flex: 1;
+				color: #1890ff;
+				font-size: 13px;
+			}
+			.btn {
+				font-size: 13px;
+			}
+		}
+	}
+}

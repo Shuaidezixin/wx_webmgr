@@ -1,0 +1,15 @@
+{
+	"development": "http://192.168.30.138:8081/admin",
+	"productiondev": "http://192.168.31.166:8006/admin",
+	"productionpro": "https://aiweb.wuleyouxi.com:2486/admin",
+	"development-socket": "ws://192.168.30.138:7878/echo",
+	"productiondev-socket": "ws://192.168.31.166:7878/echo",
+	"productionpro-socket": "wss://aiweb.wuleyouxi.com:7878/echo",
+
+	"_development": "http://192.168.30.138:8081/admin",
+	"_productiondev": "http://192.168.30.118:8006/admin",
+	"_productionpro": "https://aiweb.wuleyouxi.com:2486/admin",
+	"_development-socket": "ws://192.168.30.118:7878/echo",
+	"_productiondev-socket": "ws://192.168.30.118:7878/echo",
+	"_productionpro-socket": "wss://aiweb.wuleyouxi.com:7878/echo"
+}

@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"removeComments": false,
+		"preserveConstEnums": true,
+		"allowJs": true,
+		"module": "esNext",
+		"moduleResolution": "node",
+		"target": "es6",
+		"jsx": "react",
+		"strictNullChecks": false,
+		"typeRoots": ["./node_modules/@types", "./@types"],
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"skipLibCheck": true,
+		"lib": [
+			"esnext",
+			"dom" // Or "es2015" or "es6" should work as well
+		],
+		"baseUrl": "./src/",
+		"paths": {
+			"@img/*": ["assets/images/*"],
+			"@js/*": ["assets/js/*"],
+			"@css/*": ["assets/css/*"],
+			"@component/*": ["components/*"],
+			"@base/*": ["basecomponent/*"],
+			"@models/*": ["models/*"]
+		}
+	},
+	"file": [".ts", ".tsx", ".js", ".jsx"],
+	"include": ["./src/**/*", "./@types"],
+	"exclude": ["./node_modules"]
+}

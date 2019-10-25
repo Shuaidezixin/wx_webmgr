@@ -1,0 +1,39 @@
+.userlist-components {
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: stretch;
+	.userlist-header {
+		padding: 6px 10px 5px 10px;
+		box-sizing: border-box;
+		.searchinput {
+			width: 200px;
+			margin-right: 10px;
+		}
+		.gobacktask {
+			font-size: 12px;
+			color: #1890ff;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+	}
+	.userlist-container {
+		flex: 1 0;
+		min-width: 0;
+		overflow: auto;
+	}
+	.left-go {
+		cursor: pointer;
+		font-size: 18px;
+		font-weight: 600;
+		&:hover {
+			color: #1890ff;
+		}
+		&.act {
+			color: #00c04a;
+		}
+	}
+	.userlist-footer {
+		padding: 5px 0;
+	}
+}

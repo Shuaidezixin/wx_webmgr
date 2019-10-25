@@ -1,0 +1,29 @@
+.pyq-create {
+	height: 100%;
+	min-width: 400px;
+	border-left: 1px solid #ddd;
+	.title {
+		display: flex;
+		box-sizing: border-box;
+		padding: 4px 10px;
+		border-bottom: 1px solid #ddd;
+		align-items: center;
+		.close-pyq {
+			cursor: pointer;
+			color: #1890ff;
+			margin-right: 5px;
+		}
+		.title-txt {
+			flex: 1;
+		}
+	}
+	.container {
+		box-sizing: border-box;
+		max-height: calc(100% - 41px);
+		overflow: auto;
+		padding: 20px 10px;
+		.time {
+			width: 200px;
+		}
+	}
+}

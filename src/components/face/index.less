@@ -1,0 +1,37 @@
+.face-box {
+	width: 420px;
+	.ant-popover-inner-content {
+		padding: 0;
+	}
+	.face-img-box {
+		display: flex;
+		flex-wrap: wrap;
+		.face-item {
+			flex: 0 0 40px;
+			padding: 7px;
+			box-sizing: border-box;
+			cursor: pointer;
+			&:hover {
+				background: #ccc;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.face-new-item {
+			width: 28px;
+			height: 28px;
+			font-size: 0;
+			text-indent: -999em;
+			border-bottom: 1px solid #f0f0f0;
+			border-right: 1px solid #f0f0f0;
+			cursor: pointer;
+		}
+	}
+}
+.face-active {
+	font-size: 22px;
+	color: #a4a4a4;
+	position: relative;
+}

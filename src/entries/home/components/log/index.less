@@ -1,0 +1,58 @@
+.log-page {
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: stretch;
+	.log-title {
+		display: flex;
+		align-items: center;
+		background: #000;
+		color: #fff;
+		.close-btn {
+			padding: 10px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	}
+	.filter-box {
+		box-sizing: border-box;
+		padding: 5px 0;
+		border-bottom: 1px solid #ccc;
+		.filter {
+			width: 150px;
+			margin: 0 10px;
+		}
+	}
+	.log-middle {
+		flex: 1;
+		box-sizing: border-box;
+		padding: 0 10px;
+		overflow: auto;
+	}
+	.log-footer {
+		box-sizing: border-box;
+		border-top: 1px solid #ccc;
+		padding: 5px;
+	}
+	.log-item {
+		display: flex;
+		box-sizing: border-box;
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
+		&:nth-last-child(1) {
+			border-bottom: none;
+		}
+		.sub-type {
+			flex: 1;
+		}
+		.user {
+			width: 200px;
+		}
+		.type {
+			width: 100px;
+		}
+		.time {
+			width: 150px;
+		}
+	}
+}

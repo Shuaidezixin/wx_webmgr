@@ -1,0 +1,99 @@
+.nopath {
+	text-align: left;
+	height: 100%;
+	background: #f2f2f2;
+	box-sizing: border-box;
+	padding: 0.5rem;
+	.t {
+		display: inline-block;
+		font-size: 100px;
+		font-weight: 600;
+		//text-shadow: -5px 10px 30px #000;
+		-webkit-animation: updown1 5s linear infinite;
+		animation: updown1 5s linear infinite;
+		//transform: perspective(500px) translate3d(0, 0, 100px);
+	}
+	.content {
+		text-align: left;
+	}
+	.gohome {
+		color: #0077ff;
+		padding-top: 0.2rem;
+		cursor: pointer;
+		display: inline-block;
+	}
+
+	.detail {
+		margin-top: 0.2rem;
+		font-size: 0.14rem;
+		color: #a4a4a4;
+	}
+}
+@-webkit-keyframes updown1 {
+	0% {
+		text-shadow: -10px 0 20px #000;
+		transform: -webkit-perspective(500px) translate3d(0, 0, 0px);
+	}
+	12.5% {
+		transform: -webkit-perspective(500px) translate3d(0, 0, 20px);
+	}
+	25% {
+		text-shadow: 0px 0 20px #000;
+		transform: -webkit-perspective(500px) translate3d(0, 0, 40px);
+	}
+	37.5% {
+		transform: -webkit-perspective(500px) translate3d(0, 0, 20px);
+	}
+	50% {
+		text-shadow: 10px 0 20px #000;
+		transform: -webkit-perspective(500px) translate3d(0, 0, 0px);
+	}
+	62.5% {
+		transform: -webkit-perspective(500px) translate3d(0, 0, 20px);
+	}
+	75% {
+		text-shadow: 0px 0 20px #000;
+		transform: -webkit-perspective(500px) translate3d(0, 0, 40px);
+	}
+	87.5% {
+		transform: -webkit-perspective(500px) translate3d(0, 0, 20px);
+	}
+	100% {
+		text-shadow: -10px 0 20px #000;
+		transform: -webkit-perspective(500px) translate3d(0, 0, 0px);
+	}
+}
+@keyframes updown1 {
+	0% {
+		text-shadow: -10px 0 20px #000;
+		transform: perspective(500px) translate3d(0, 0, 0px);
+	}
+	12.5% {
+		transform: perspective(500px) translate3d(0, 0, 20px);
+	}
+	25% {
+		text-shadow: 0px 0 20px #000;
+		transform: perspective(500px) translate3d(0, 0, 40px);
+	}
+	37.5% {
+		transform: perspective(500px) translate3d(0, 0, 20px);
+	}
+	50% {
+		text-shadow: 10px 0 20px #000;
+		transform: perspective(500px) translate3d(0, 0, 0px);
+	}
+	62.5% {
+		transform: perspective(500px) translate3d(0, 0, 20px);
+	}
+	75% {
+		text-shadow: 0px 0 20px #000;
+		transform: perspective(500px) translate3d(0, 0, 40px);
+	}
+	87.5% {
+		transform: perspective(500px) translate3d(0, 0, 20px);
+	}
+	100% {
+		text-shadow: -10px 0 20px #000;
+		transform: perspective(500px) translate3d(0, 0, 0px);
+	}
+}

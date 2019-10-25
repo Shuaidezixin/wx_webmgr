@@ -1,0 +1,10 @@
+const Prefix_Word = "Character_";
+export const SAVEPERSONDESIGN = `${Prefix_Word}SAVE_PERSON_DESIDN`;
+export const GETPERSONDESIGN = `${Prefix_Word}GET_PERSON_DESIGN`;
+export const DELETEPERSONDESIGN = `${Prefix_Word}DELETE_PERSON_DESIGN`;
+export const PERSONDESIGNINFO = `${Prefix_Word}PERSON_DESIGN_INFO`;
+export const SINGLECHECK = `${Prefix_Word}SINGLE_CHECK`;
+export const ALLCHECK = `${Prefix_Word}ALL_CHECK`;
+export const GETPERSONDESIGN1 = `${Prefix_Word}GET_PERSON_DESIGN1`;
+export const USERSETPERSONDESIGN = `${Prefix_Word}USER_SET_PERSON_DESIGN`;
+export const USERREMOVEPERSONDESIGN = `${Prefix_Word}USER_REMOVE_PERSON_DESIGN`;
